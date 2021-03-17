@@ -1,0 +1,21 @@
+{
+    "name": "fridom-for-android",
+    "version": "1.0.0",
+    "description": "Frida script template project for android written in TypeScript",
+    "private": true,
+    "main": "src/index.ts",
+    "scripts": {
+        "prepare": "npm run build",
+        "build": "frida-compile src/index.ts -o _src.js -c",
+        "watch": "frida-compile src/index.ts -o _src.js -w",
+        "prelaunch-hook": "frida-compile src/index.ts -o _src.js -c",
+        "launch-hook": "python ./hook.py -launch",
+        "presilent-hook": "frida-compile src/index.ts -o _src.js -c",
+        "silent-hook": "python ./hook.py"
+    },
+    "devDependencies": {
+        "@types/frida-gum": "^16.2.0",
+        "@types/node": "^14.14.10",
+        "frida-compile": "^10.0.0"
+    }
+}
