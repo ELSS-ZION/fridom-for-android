@@ -1,6 +1,7 @@
 ## Description
 
 Frida script template project for android written in TypeScript.
+集成了常见的反反调试，详细的Native 层跟踪打印（包括可变参数函数的参数打印，并且会根据参数类型进行解析打印）
 
 ## Usage
 
