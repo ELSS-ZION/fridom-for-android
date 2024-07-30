@@ -27,6 +27,12 @@ apkPackageName = '{{xxx.xxx.xxx}}'
 src/index.ts
 ```
 
+### Dump APK Of Current Focused APP
+
+```sh
+$ ./dumpCurrentFocusedApk.ps1
+```
+
 ### Spawn a new process and hook
 
 ```sh
