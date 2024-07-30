@@ -1,0 +1,1 @@
+adb shell dumpsys window | findstr mCurrentFocus | awk '{match($0, /u.\s([^\s\/]+)/, arr); print arr[1]}' | Tee-Object -Variable appLabel | %{adb shell pm path $_}  | awk '{match($0, /package:(.+\.apk)/, arr); print arr[1]}' | %{adb pull $_ "$appLabel.apk"}
