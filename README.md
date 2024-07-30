@@ -27,7 +27,7 @@ apkPackageName = '{{xxx.xxx.xxx}}'
 src/index.ts
 ```
 
-### Dump APK Of Current Focused APP
+### Dump APK Of Current Focused App
 
 ```sh
 $ ./dumpCurrentFocusedApk.ps1
